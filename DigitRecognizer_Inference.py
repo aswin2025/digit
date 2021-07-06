@@ -41,7 +41,7 @@ plt.imshow(img)
 data = img
 
 # load the model from disk
-model_file = os.environ['MODEL_PATH'] if os.getenv('MODEL_PATH') else "kerasDigitRecognizer.h5"
+model_file = os.path.join(os.environ['MODEL_PATH'], 'kerasDigitRecognizer.h5') 
 print ("Model file path - ", model_file)
 model = load_model(model_file)
 
