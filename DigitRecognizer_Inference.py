@@ -32,7 +32,7 @@ import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
   
 # Read input image
-input_file = os.path.join(os.environ['DATA_PATH'], 'input.jpg') if os.getenv('DATA_PATH') else "Digits/four.jpg"
+input_file = os.path.join(os.environ['DATA_PATH'], 'four.jpg') if os.getenv('DATA_PATH') else "Digits/four.jpg"
 print ("input file path - ", input_file)
 img = mpimg.imread(input_file)
   
